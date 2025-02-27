@@ -3,7 +3,7 @@ import cors from 'cors';
 import { MongoClient, ObjectId } from 'mongodb';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // MongoDB connection
 const uri = "mongodb+srv://666hemanth:666hemanth@test1.pcc7w.mongodb.net/?retryWrites=true&w=majority&appName=Test1";
