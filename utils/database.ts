@@ -1,4 +1,5 @@
 import { getCollection } from './mongodb';
+import { config } from './config';
 
 export interface LedgerEntry {
   _id?: string;
@@ -22,7 +23,7 @@ export interface LedgerEntry {
 }
 
 // API URL for the backend server
-export const API_URL = 'http://localhost:3000/api';
+export const API_URL = config.apiUrl;
 
 // Initialize the database
 export const initializeDatabase = async () => {
