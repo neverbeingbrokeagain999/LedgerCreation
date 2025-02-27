@@ -22,7 +22,7 @@ export interface LedgerEntry {
 }
 
 // API URL for the backend server
-export const API_URL = 'https://ledgercreationserver.vercel.app/api';
+export const API_URL = 'http://localhost:3000/api';
 
 // Initialize the database
 export const initializeDatabase = async () => {
